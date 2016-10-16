@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+$button-highlight-color: lime;
+$button-glow-color: lighten($button-highlight-color, 50%); 
+
+.start-button {
+    text-shadow: 0 0 15px $button-glow-color;
+    box-shadow: 0 0 15px $button-glow-color, inset 0 0 15px $button-glow-color;
+    font-size: 5rem;
+    border-width: 3px;
+
+    border-color: $button-highlight-color;
+    color: $button-highlight-color;
+}
